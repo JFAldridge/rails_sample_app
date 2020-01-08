@@ -5,6 +5,7 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
   def setup
     @user = users(:josh)
     @other_user = users(:taco)
+    @unverified_user = users(:cat)
   end
 
   test "should redirect from users when not logged in" do
@@ -68,5 +69,11 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
       delete user_path(@user)
     end
     assert_redirected_to root_path
+  end
+
+  test "should redirect show when target user isn't activated" do
+    log_in_as(@user)
+    get user_path(@unverified_user)
+    assert_redirected_to root_url
   end
 end
