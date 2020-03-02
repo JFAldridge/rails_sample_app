@@ -4,6 +4,16 @@ orange:
   created_at: <%= 10.minutes.ago %>
   user: josh
 
+weewoo:
+  content: "WeeWoo!"
+  created_at: <%= 3.days.ago %>
+  user: taco
+
+woowee:
+  content: "Woowee!"
+  created_at: <%= 3.days.ago %>
+  user: taco
+
 zone:
   content: "Danger zone!"
   created_at: <%= 3.days.ago %>
@@ -40,3 +50,5 @@ micropost_<%= n %>:
   created_at: <%= 42.days.ago %>
   user: josh
 <% end %>
+
+<% User%>

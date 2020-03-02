@@ -8,7 +8,7 @@ josh:
   activated_at: <%= Time.zone.now %>
 
 taco:
-  name: Sterling Archer
+  name: taco
   email: duchess@example.gov
   password_digest: <%= User.digest('password') %>
   activated: true

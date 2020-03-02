@@ -1,0 +1,15 @@
+one:
+  follower: josh
+  followed: taco
+
+two:
+  follower: josh
+  followed: cat
+
+three:
+  follower: taco
+  followed: josh
+
+four:
+  follower: lana
+  followed: josh
